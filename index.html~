@@ -30,7 +30,7 @@
 			
 			sleep(5000, function(){
 				
-				alert("You have just been owned by Seema and Max /n /n Thanks for the free money");
+				alert("You have just been owned by Seema and Max \n \n Thanks for the free money");
 			})
 
 		});
