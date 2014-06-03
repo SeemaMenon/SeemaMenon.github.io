@@ -96,5 +96,9 @@
             </p><input id="create_new_claimant" value="Create New Claimant" type="submit">
     </form>
     
-
+    <script>
+	$(function(){
+	    alert('Hello Seema');
+	});
+    </script>
 </body></html>
