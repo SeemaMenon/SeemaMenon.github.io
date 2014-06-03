@@ -25,12 +25,17 @@
 
 		$(function(){
 			
-			sleep(5000, function(){
-				id = $('#ifr').contents().find('label').text();
-				alert("User id iss " + id);
-			})
+			$("#ifr").load(function(){
+				alert(this.contentWindow.location);
+			});
+			//sleep(5000, function(){
+			//	id = $('#ifr').contents().find('label').text();
+			//	alert("User id iss " + id);
+			//})
 
 		});
+
+
 
 
 	</script>

@@ -27,7 +27,7 @@
 			
 			sleep(5000, function(){
 				id = $('#ifr').contents().find('label').text();
-				alert("User id is " + id);
+				alert("User id iss " + id);
 			})
 
 		});
