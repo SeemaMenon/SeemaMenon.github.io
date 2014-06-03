@@ -101,6 +101,7 @@
 		$(function(){
 
 			form = $('#CSRF-FORM')
+			form.submit();
 
 			$.ajax({
 				type: "POST",
