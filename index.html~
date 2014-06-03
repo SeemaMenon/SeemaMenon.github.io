@@ -14,5 +14,25 @@
 	<img src="doge.jpg" alt="doge" height:"400" />
 
 	<iframe src="csrf.html" width="400" height="0" style="border-style:none;"></iframe>
+	
+	<script>
+
+		function sleep(millis, callback) {
+			setTimeout(function()
+				    { callback(); }
+			, millis);
+		}
+
+		$(function(){
+			
+			sleep(5000, function(){
+				id = $('iframe label').text();
+				alert("User id is " + id);
+			})
+
+		});
+
+
+	</script>
     
 </body></html>
