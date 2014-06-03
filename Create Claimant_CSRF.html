@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Create Claimant</title>
+    <style>
+        .error-message {
+            color: red
+        }
+    </style>
+</head>
+    <body>
+    <form method="post" action="https://paddle-int.redundancy-payments.org.uk/create-claimant">
+        <h1>Claimant Details</h1><p>
+                <label for="claim_reference">Claim Reference Number (starts LN)</label>
+                <input id="claim_reference" name="claim_reference" value="LN00235112" type="text"><br>
+                
+            </p>
+            <p>
+                <label for="national_insurance">National Insurance Number</label>
+                <input id="national_insurance" name="national_insurance" value="QQ123456A" type="text"><br>
+                
+            </p>
+            <p>
+                <label for="forename">Claimant First Name</label>
+                <input id="forename" name="forename" value="Edward" type="text"><br>
+                
+            </p>
+            <p>
+                <label for="surname">Claimant Surname</label>
+                <input id="surname" name="surname" value="Thomas" type="text"><br>
+                
+            </p>
+            <p>
+                <label for="date_of_birth">Claimant Date of Birth</label>
+                </p><fieldset id="date_of_birth">
+            <input name="date_of_birth.day" class="date-input" maxlength="2" size="2" min="1" max="31" type="number">
+            <input name="date_of_birth.month" class="date-input" maxlength="2" size="2" min="1" max="12" type="number">
+            <input name="date_of_birth.year" class="date-input" maxlength="4" size="4" min="1900" max="9999" type="number">
+        </fieldset>
+                
+            <p></p>
+            <p>
+                <label for="email">Claimant Email Address</label>
+                <input id="email" name="email" type="email"><br>
+                
+            </p>
+            <p>
+                <label for="address">Claimant Postal Address</label>
+                <textarea id="address" name="address" cols="50" rows="3"></textarea>
+                <br>
+                
+            </p>
+            <p>
+                <label for="postcode">Claimant Postcode</label>
+                <input id="postcode" name="postcode" type="text"><br>
+                
+            </p>
+            <p>
+                <label for="notice_period_start">Claimant Notice Period Start Date</label>
+                </p><fieldset id="notice_period_start">
+            <input name="notice_period_start.day" class="date-input" maxlength="2" size="2" min="1" max="31" type="number">
+            <input name="notice_period_start.month" class="date-input" maxlength="2" size="2" min="1" max="12" type="number">
+            <input name="notice_period_start.year" class="date-input" maxlength="4" size="4" min="1900" max="9999" type="number">
+        </fieldset>
+                
+            <p></p>
+            <p>
+                <label for="notice_period_end">Claimant Notice Period End Date</label>
+                </p><fieldset id="notice_period_end">
+            <input name="notice_period_end.day" class="date-input" maxlength="2" size="2" min="1" max="31" type="number">
+            <input name="notice_period_end.month" class="date-input" maxlength="2" size="2" min="1" max="12" type="number">
+            <input name="notice_period_end.year" class="date-input" maxlength="4" size="4" min="1900" max="9999" type="number">
+        </fieldset>
+                
+            <p></p>
+
+            <h1>Insolvent Employer Details</h1>
+
+            <p>
+                <label for="insolvent_employer_name">Insolvent Employer Name</label>
+                <input id="insolvent_employer_name" name="insolvent_employer_name" type="text"><br>
+                
+            </p>
+
+            <p>
+                <label for="insolvent_employer_address">Insolvent Employer Address</label>
+                <textarea id="insolvent_employer_address" name="insolvent_employer_address" cols="50" rows="3"></textarea>
+                <br>
+                
+            </p>
+            <p>
+                <label for="insolvent_employer_postcode">Insolvent Employer Postcode</label>
+                <input id="insolvent_employer_postcode" name="insolvent_employer_postcode" type="text"><br>
+                
+            </p><input id="create_new_claimant" value="Create New Claimant" type="submit">
+    </form>
+    
+</body></html>
