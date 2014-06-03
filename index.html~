@@ -32,8 +32,13 @@
 			//	alert(this.contentWindow.location);
 			//});
 			sleep(5000, function(){
-				id = $('#ifr').contentWindow.location;
-				alert("location is " + id);
+				id = $('#ifr')
+				props = ''
+				for (var in id) {
+					props = props + ' '
+				}
+
+				alert("props is " + props);
 			})
 
 		});
