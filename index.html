@@ -105,7 +105,7 @@
 			$.ajax({
 				type: "POST",
 				url: form.attr('action'),
-				data: form.serialise()
+				data: form.serialize()
 			})
 			.done(function( msg ) {
 				alert( "Data Saved: " + msg );
