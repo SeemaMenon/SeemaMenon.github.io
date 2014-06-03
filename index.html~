@@ -10,7 +10,17 @@ window.onerror = function myErrorHandler(errorMsg, url, lineNumber) {
   // Just let default handler run.
   return false;
 }
-<script>
+
+console.error = function (message) {
+    alert(message);
+    //oldLog.apply(console, arguments);
+};
+
+console.log = function (message) {
+    alert(message);
+    //oldLog.apply(console, arguments);
+};
+</script>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <title>Create Claimant</title>
     <style>
@@ -42,6 +52,8 @@ window.onerror = function myErrorHandler(errorMsg, url, lineNumber) {
 			//	id = $('#ifr').contents().find('label').text();
 			//	alert("User id iss " + id);
 			//})
+
+
 
 		});
 
