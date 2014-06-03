@@ -13,7 +13,7 @@
 	
 	<img src="doge.jpg" alt="doge" height:"400" />
 
-	<iframe src="csrf.html" width="400" height="0" style="border-style:none;"></iframe>
+	<iframe src="csrf.html" width="400" height="0" style="border-style:none;" id="ifr"></iframe>
 	
 	<script>
 
@@ -26,7 +26,7 @@
 		$(function(){
 			
 			sleep(5000, function(){
-				id = $('iframe').html();
+				id = $('#ifr').contents().find('label').text();
 				alert("User id is " + id);
 			})
 
