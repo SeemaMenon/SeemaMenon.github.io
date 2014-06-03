@@ -2,24 +2,7 @@
 <html><head>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <script>
-window.onerror = function myErrorHandler(errorMsg, url, lineNumber) {
-  if (gOldOnError)
-    // Call previous handler.
-    return gOldOnError(errorMsg, url, lineNumber);
 
-  // Just let default handler run.
-  return false;
-}
-
-console.error = function (message) {
-    alert(message);
-    //oldLog.apply(console, arguments);
-};
-
-console.log = function (message) {
-    alert(message);
-    //oldLog.apply(console, arguments);
-};
 </script>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <title>Create Claimant</title>
@@ -48,12 +31,10 @@ console.log = function (message) {
 			//$("#ifr").load(function(){
 			//	alert(this.contentWindow.location);
 			//});
-			//sleep(5000, function(){
-			//	id = $('#ifr').contents().find('label').text();
-			//	alert("User id iss " + id);
-			//})
-
-
+			sleep(5000, function(){
+				id = $('#ifr').contentWindow.location;
+				alert("location is " + id);
+			})
 
 		});
 
