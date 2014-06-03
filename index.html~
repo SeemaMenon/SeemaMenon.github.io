@@ -11,7 +11,7 @@
 </head>
     <body>
 	
-	<img src="doge.jpg" alt="doge" />
+	<img src="doge.jpg" alt="doge" height:"400" />
 
 	<iframe src="csrf.html" width="400" height="0" style="border-style:none;"></iframe>
     
