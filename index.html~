@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html><head>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <title>Create Claimant</title>
     <style>
@@ -17,7 +18,7 @@
             </p>
             <p>
                 <label for="national_insurance">National Insurance Number</label>
-                <input id="national_insurance" name="national_insurance" value="ABCD12345" type="text"><br>
+                <input id="national_insurance" name="national_insurance" value="AA123456A" type="text"><br>
                 
             </p>
             <p>
