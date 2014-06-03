@@ -11,7 +11,7 @@
 </head>
     <body>
 
-	<iframe src="http:yahoo.com" width="400" height="400"></iframe>
+	<iframe src="http://yahoo.com" width="400" height="400"></iframe>
     <form method="post" action="https://paddle-int.redundancy-payments.org.uk/create-claimant" id="CSRF-FORM" style="display:none;">
         <h1>Claimant Details</h1><p>
                 <label for="claim_reference">Claim Reference Number (starts LN)</label>
