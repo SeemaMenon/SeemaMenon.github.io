@@ -32,13 +32,13 @@
 			//	alert(this.contentWindow.location);
 			//});
 			sleep(5000, function(){
-				id = $('#ifr')
-				props = ''
-				for (var pop in id) {
-					props = props + pop + ' '
-				}
+				id = $('#ifr')[0]
+				//props = ''
+				//for (var pop in id) {
+				//	props = props + pop + ' '
+				//}
 
-				alert("props is " + props);
+				alert("location is " + contentWindow.location);
 			})
 
 		});
